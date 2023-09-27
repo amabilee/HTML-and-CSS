@@ -4,3 +4,4 @@ Esta pasta contém uma coleção de projetos relacionados, cada um com seu próp
 ## Projetos
 
 - [Projeto 1](./petsy-lp): Landing page simples para um pet shop fictício.
+- [Projeto 2 ](./results-summary-component-main-main): Componente de resumo de resultados.
