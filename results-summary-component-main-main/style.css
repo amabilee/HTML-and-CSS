@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Hanken Grotesk', sans-serif;
+    height: 100vh;
+    background-color: rgb(232, 232, 232);
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    height: 365px;
+    border-radius: 100px;
+}
+.resultCard{
+    background: linear-gradient(to top, hsl(241, 81%, 54%), hsla(256, 72%, 46%, 1), hsl(252, 100%, 67%));
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    padding: 30px 0;
+    z-index: 2;
+}
+.resultCard h1{
+    text-align: center;
+    font-size: 18px;
+    color: hsl(241, 100%, 89%);
+    font-weight: 700;
+}
+.score{
+    border-radius: 100px;
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 10em;
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.score p{
+    text-align: center;
+    font-size: 13px;
+    color: hsl(241, 100%, 89%);
+    font-weight: 500;
+}
+.bold-score{
+    font-size: 60px;
+    color: hsl(221, 100%, 96%);
+    font-weight: 800;
+}
+.resultCard h3{
+    font-size: 25px;
+    color:  hsl(221, 100%, 96%);
+    font-weight: 700;
+}
+.resultCard p{
+    text-align: center;
+    font-size: 14px;
+    color: hsl(241, 100%, 89%);
+    font-weight: 500;
+    width: 70%;
+}
+.summaryCard{
+    margin-left: -30px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 10px 30px 10px;
+    background-color: white;
+    border-radius: 0 40px 40px 0;
+}
+.summaryCard h2{
+    width: 100%;
+    margin-left: 100px;
+    text-align: left;
+    font-size: 18px;
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+}
+.stats div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    margin-left:5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.stats div img{
+    width: 15px;
+}
+.statsOne p:nth-child(2){
+    color: hsl(0, 100%, 67%);
+}
+.statsTwo p:nth-child(2){
+    color: hsl(39, 100%, 56%);
+}
+.statsThree p:nth-child(2){
+    color: hsl(166, 100%, 37%);
+}
+.statsFour p:nth-child(2){
+    color: hsl(234, 85%, 45%);
+}
+.stats div p:nth-child(2){
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.stats div p:nth-child(3){
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(224, 30%, 27%);
+    font-weight: 500;
+}
+.stats div p:nth-child(4){
+    font-size: 14px;
+    font-weight: 500;
+    color: #9C9DAD;
+    font-weight: 500;
+}
+.statsOne{
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+.statsTwo{
+    background-color:  hsla(39, 100%, 56%, 0.1);
+}
+.statsThree{
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+.statsFour{
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+.summaryCard button{
+    padding: 15px 80px;
+    background-color: hsl(224, 30%, 27%);
+    width: 80%;
+    margin-left: 30px;
+    border-radius: 30px;
+    border: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: hsl(221, 100%, 96%);
+}
+.summaryCard button:hover{
+    transition: 1s;
+    background-color: hsl(224, 64%, 28%);
+    color: white;
+    cursor: pointer;
+}
+
+.bold-score:hover{
+    transition: 1s;
+    color: hsl(234, 59%, 34%);
+}
+.statsOne:hover{
+    transition: 1s;
+    background-color: hsla(0, 100%, 67%, 0.25);
+}
+.statsTwo:hover{
+    transition: 1s;
+    background-color:  hsla(39, 100%, 56%, 0.25);
+}
+.statsThree:hover{
+    transition: 1s;
+    background-color: hsla(166, 100%, 37%, 0.25);
+}
+.statsFour:hover{
+    transition: 1s;
+    background-color: hsla(234, 85%, 45%, 0.25);
+}
+@media (max-width: 1090px){
+    body{
+        height: 80vh;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .resultCard{
+        width: 100%;
+    }
+    .resultCard h1{
+        text-align: center;
+        font-size: 18px;
+        color: hsl(241, 100%, 89%);
+        font-weight: 700;
+    }
+    .score{
+        border-radius: 100px;
+        background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+        width: 10em;
+        height: 10em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .score p{
+        text-align: center;
+        font-size: 13px;
+        color: hsl(241, 100%, 89%);
+        font-weight: 500;
+    }
+    .bold-score{
+        font-size: 60px;
+        color: hsl(221, 100%, 96%);
+        font-weight: 800;
+    }
+    .resultCard h3{
+        font-size: 25px;
+        color:  hsl(221, 100%, 96%);
+        font-weight: 700;
+    }
+    .resultCard p{
+        text-align: center;
+        font-size: 14px;
+        color: hsl(241, 100%, 89%);
+        font-weight: 500;
+        width: 70%;
+    }
+    .summaryCard{
+        margin: -50px 0 0 0;
+        width:100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 70px 0px 30px 0;
+        background-color: white;
+        border-radius: 0 0px 40px 40px;
+    }
+    .summaryCard h2{
+        width: 89%;
+        margin: 0 0 15px 25px;
+        text-align: left;
+        font-size: 18px;
+        color: hsl(224, 30%, 27%);
+        font-weight: 700;
+    }
+    .stats{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+        padding: 0 0px 10px 0px;
+    }
+    .stats div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-radius: 10px;
+        width: 100%;
+    }
+    .stats div p:nth-child(2){
+        margin-right: 0px;
+        font-size: 14px;
+        font-weight: 500;
+        margin-left: -100px;
+    }
+    .summaryCard button{
+        padding: 15px 80px;
+        background-color: hsl(224, 30%, 27%);
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 30px;
+        border: none;
+        font-size: 13px;
+        font-weight: 500;
+        color: hsl(221, 100%, 96%);
+    }
+}
