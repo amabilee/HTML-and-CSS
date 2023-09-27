@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+    background: url(./images/pattern-background-desktop.svg) no-repeat, #E1E9Ff;
+    background-size: contain;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:25%;
+    border-radius: 20px;
+    background-color: hsl(225, 100%, 98%);
+}
+.header img{
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 45px;
+}
+.content h1{
+    color: hsl(223, 47%, 23%);
+    font-size: 20px;
+    padding: 20px 0;
+    font-weight: 700;
+}
+.content h2{
+    color: hsl(224, 23%, 55%);
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+}
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.details{
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: hsla(225, 100%, 94%, 0.4);
+    padding: 15px;
+    border-radius: 15px;
+}
+.price img{
+    width: 45px;
+    margin-right: 25px;
+}
+.priceText h3{
+    color: hsl(223, 47%, 23%);
+    font-size: 15px;
+    text-align: center;
+}
+.priceText p{
+    color: hsl(224, 23%, 55%);
+    font-size: 15px;
+    text-align: center;
+}
+.details a{
+    color: hsl(245, 75%, 52%);
+    font-size: 15px;
+    text-align: center;
+    font-weight: 700;
+    text-decoration: underline 1px;
+}
+.buttonOne{
+    background-color: hsl(245, 75%, 52%);
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    color: hsl(225, 100%, 98%);
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Red Hat Display', sans-serif;
+    box-shadow: hsla(245, 75%, 52%, 0.4) 0px 8px 10px;
+}
+.buttonOne:hover{
+    transition: 1s;
+    background-color: hsla(245, 75%, 52%, 0.6);
+}
+.details a:hover{
+    text-decoration: none;
+    transition: 1s;
+    color: hsla(245, 75%, 52%, 0.6);
+}
+.buttonTwo{
+    color: hsl(224, 23%, 55%);
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 10px 0;
+}
+.buttonTwo:hover{
+    transition: 1s;
+    color: hsl(223, 47%, 23%);
+}
+@media (max-width: 1181px) {
+    .card{
+        width: 90%;
+    }
+    .content{
+        padding: 0px 30px;
+    }
+    body{
+        height: 80vh;
+    }
+}

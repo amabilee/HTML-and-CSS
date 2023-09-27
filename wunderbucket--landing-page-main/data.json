@@ -1,0 +1,41 @@
+[
+    {
+        "logo": "./images/cloud-hosted.png",
+        "title": "<span>Cloud Hosted</span><br><br>All your content is hosted on Amazon's Cloud. This is the infrastructure that powers the world's biggest websites, not a server running out of a garage. You're in good hands."
+    },
+    {
+        "logo": "./images/instant-publish.png",
+        "title": "<span>Instant Publish</span><br><br>When you're done making changes in a local folder, just click 'publish' and it's live. No branch, merge, build, deploy just to fix a typo or change a font. It lets you quickly iterate, and tinker. It works how you work."
+    },
+    {
+        "logo": "./images/edit-anywhere.png",
+        "title": "<span>Edit Anywhere</span><br><br>Sync your site's code to multiple computers. Allow your teammates to made edits and publish sites from multiple desktops."
+    }
+    ,
+    {
+        "logo": "./images/smart-localhost.png",
+        "title": "<span>Smart Localhost</span><br><br>When you add a folder to Wunderbucket, you get a localhost server that will reload the page any time you change your source code. You'll never need to hit refresh again."
+    }
+    ,
+    {
+        "logo": "./images/mac-native.png",
+        "title": "<span>Mac Native</span><br><br>A totally different take on static hosting, Wunderbucket is deeply integrated in the macOS experience. It makes publishing static content a completely natural part of your normal Mac workflow."
+    }
+    ,
+    {
+        "logo": "./images/any-editor.png",
+        "title": "<span>Works with any code editor</span><br><br>Use your favorite code editor to build your web sites: Nova, Coda, Espresso, Visual Studio Code, BBEdit, TextWangler, etc. Because Wunderbucket natively integrates with the macOS Finder it works with all of them."
+    },
+    {
+        "logo": "./images/custom-domains.png",
+        "title": "<span>Use your own domain</span><br><br>All Wunderbucket sites support custom domains with minimal configuration. It only takes minutes to get your site running off of your own domain."
+    },
+    {
+        "logo": "./images/global-cdn.png",
+        "title": "<span>Global CDN</span><br><br>Your sites will load super fast on any device from any location when they're published over our global content distribution network."
+    },
+    {
+        "logo": "./images/free-ssl.png",
+        "title": "<span>Free SSL</span><br><br>All of your pages and assets will be served over https. You won't have to worry about purchasing or renewing your SSL certificate."
+    }
+]

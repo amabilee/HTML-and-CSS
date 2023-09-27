@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+}
+.content{
+    margin: 0;
+    background-color: hsl(216, 50%, 16%);
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 20px;
+    height: 550px;
+    width: 21%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.nftImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nftImg img{
+    width: 100%;
+    border-radius: 20px;
+}
+.nftImg::before{
+    transition: 1s;
+    opacity: 0;
+}
+.nftImg:hover::before{
+    content: "";
+    position: absolute;
+    width: 21%;
+    height:36.5%;
+    background-color:hsla(178, 100%, 50%, 0.2);
+    border-radius: 20px;
+    transition: 1s;
+    opacity: 1;
+}
+.nftImg:hover .svg{
+    transition: 1s;
+    opacity: 1;
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -150px;
+    margin-left: -25px;
+}
+.nftImg .svg{
+    transition: 1s;
+    opacity: 0;
+}
+.content h1{
+    color: hsl(0, 0%, 100%);
+    font-size: 25px;
+    font-weight: 600;
+}
+.content h2{
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    font-weight: 300;
+}
+.details{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    padding-bottom: 20px;
+}
+.cost, .time{
+    display: flex;
+    flex-direction: row;
+}
+.cost img{
+    width: 12px;
+    height: 19px;
+    margin-right: 7px;
+}
+.time img{
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+}
+.cost p{
+    color: hsl(178, 100%, 50%);
+    font-size: 15px;
+    font-weight: 600;
+}
+.time p{
+    color: hsl(215, 51%, 70%);
+    font-size: 15px;
+    font-weight: 400;
+}
+.credits{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.credits img{
+    width: 35px;
+    border-radius: 20px;
+    border: 1px white solid;
+    margin-right: 15px;
+}
+.credits p{
+    color: hsl(215, 51%, 70%);
+    font-size: 16px;
+    font-weight: 300;
+}
+.name{
+    color: white
+}
+.content h1:hover, .name:hover{
+    transition: 1s;
+    color: hsl(178, 100%, 50%);
+}
+@media (max-width: 375px) {
+    .content{
+        margin: 0 20px;
+        background-color: hsl(216, 50%, 16%);
+        padding: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        border-radius: 20px;
+        height: 530px;
+        width: 100%;
+        box-shadow: none;
+    }
+    .nftImg:hover::before{
+        content: "";
+        position: absolute;
+        width: 76%;
+        height: 34.5%;
+        background-color:hsla(178, 100%, 50%, 0.2);
+        border-radius: 20px;
+        transition: 1s;
+        opacity: 1;
+    }
+}

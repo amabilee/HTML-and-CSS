@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif+Caption:wght@300;400&display=swap'); /*font-family: 'PT Serif Caption', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;500;700&display=swap'); /*font-family: 'Noto Sans', sans-serif;*/
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: #161616
+}
+a{
+    cursor: pointer;
+}
+body{
+    background-color: #FEF8DF;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    padding: 25px 25px 15px 25px;
+}
+header img{
+    width: 200px;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+header nav ul li{
+    padding: 0px 10px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+header nav ul li a{
+    text-decoration: none;
+}
+header nav ul li button{
+    margin-top: -20px;
+    padding: 8px 15px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: transparent;
+    border: 2px solid #161616;
+    border-radius: 25px;
+}
+/*hero*/
+.hero{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 700px;
+    margin: 0 auto;
+}
+.hero img{
+    width: 100%;
+}
+.hero h1{
+    margin: 30px 20px;
+    font-family: 'PT Serif Caption', serif;
+    font-size: 63px;
+    font-weight: 300;
+}
+.hero h2{
+    margin: 0px 20px 30px 20px;
+}
+.hero h2, .aboutSection h2, .feature p, .aboutSection p{
+    margin: 0px 20px 30px 20px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+}
+.landingSectionButtons{
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: row;
+}
+.landingSectionButtons button:nth-child(1), .aboutSection button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 19px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    background-color: transparent;
+    border: 2px solid #161616;
+    border-radius: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.landingSectionButtons button:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 19px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: transparent;
+}
+.landingSectionButtons button img, .aboutSection button img{
+    margin-right: 14px;
+    width: 27px;
+}
+.landingSectionButtons button:nth-child(2) img{
+    width: 35px;
+}
+.hero p{
+    margin: 10px 30px 30px 30px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.aboutSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 900px;
+    margin: 0 auto;
+}
+.transition{
+    width: 100%;
+}
+.aboutSection h2{
+    margin: 20px 20px 30px 20px;
+}
+.featureTypeOne{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.featureTypeTwo{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.feature img{
+    height: 400px;
+}
+.feature p span, .aboutSection p span{
+    font-family: 'PT Serif Caption', serif;
+    font-size: 26px;
+    font-weight: 300;
+}
+.aboutSection button{
+    padding: 8px 180px;
+    font-size: 25px;
+    background-color: transparent;
+    border: 2px solid #161616;
+    border-radius: 30px;
+    margin: 60px 0 80px 0;
+}
+footer{
+    display: flex;
+    align-items: center;
+    width: 60vw;
+    margin: 0 auto;
+    height: 100px;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+footer ul li {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+footer ul li span{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/*animations*/
+.aboutSection button:hover, .landingSectionButtons button:nth-child(1):hover{
+    transition: 0.5s;
+    background-color: #F6AF9C;
+}
+@media (max-width: 800px) {
+    .aboutSection, .hero{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .hero h1, .hero h2, .hero p{
+        text-align: center;
+    }
+    .landingSectionButtons, .featureTypeOne, .featureTypeTwo{
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .feature img{
+        margin: 0 auto;
+    }
+    .feature p, .aboutSection p{
+        text-align: center;
+    }
+    .aboutSection button{
+        padding: 8px 80px;
+    }
+    footer{
+        margin: 50px auto;
+        padding-bottom: 50px;
+    }
+    footer ul{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        height: 260px;
+    }
+    header nav ul li:nth-child(2), header nav ul li:nth-child(3){
+        display: none;
+    }
+}
